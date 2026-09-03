@@ -1,0 +1,112 @@
+html{
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Poppins", sans-serif; */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("C:\\Users\\acer\\Desktop\\Main project\\Frontend\\images\\projimg1.jpg")
+      center/cover no-repeat;
+  height: 100vh;
+ 
+}
+
+.register {
+  width: 400px;
+  margin: 80px auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.register h1 {
+  text-align: center;
+  color: #0088cc;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.register input[type="text"],
+.register input[type="password"]
+.register input[type="email"] {
+  margin-top: 8px;
+  padding: 12px;
+  border: 2px solid #dbeafe;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.register input[type="text"]:focus,
+.register input[type="password"]:focus,
+.register input[type="email"]:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.3);
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 14px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0096c7, #023e8a);
+  transform: translateY(-2px);
+}
+
+.register p {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.register a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 500px) {
+  .register {
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+  }
+
+  .register h1 {
+    font-size: 1.7rem;
+  }
+} 

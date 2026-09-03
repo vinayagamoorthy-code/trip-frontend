@@ -1,0 +1,149 @@
+ @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap");
+
+.create-trip-page {
+   min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1e8d8;
+  font-family: "Inter", sans-serif;
+  padding: 40px 20px;
+}
+.page{
+   background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 100%;
+}
+
+.create-trip-card {
+  width: 100%;
+  max-width: 460px;
+  background: #fffdf8;
+  border: 1px solid #e4d9c3;
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 40px rgba(33, 28, 23, 0.06);
+}
+
+.create-trip-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c7a652;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.create-trip-title {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #211c17;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.create-trip-subtitle {
+  font-size: 14px;
+  color: #8a7f6b;
+  margin: 0 0 28px;
+}
+
+.create-trip-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-trip-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field-group {
+  margin-bottom: 18px;
+}
+
+.field-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #5b5347;
+  margin-bottom: 6px;
+}
+
+.field-icon {
+  color: #0f4c43;
+}
+
+.ct-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-size: 14.5px;
+  font-family: "Inter", sans-serif;
+  color: #211c17;
+  background: #fbf6ec;
+  border: 1px solid #e4d9c3;
+  border-radius: 10px;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.ct-input:focus {
+  outline: none;
+  border-color: #0f4c43;
+  box-shadow: 0 0 0 3px rgba(15, 76, 67, 0.13);
+}
+
+textarea.ct-input {
+  resize: none;
+}
+
+.error-message {
+  font-size: 13px;
+  color: #b0431b;
+  background: #f7e1d8;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px 0 16px;
+}
+
+.ct-submit {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 14.5px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #f1e8d8;
+  background: #0f4c43;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.ct-submit:hover:not(:disabled) {
+  background: #0c3c36;
+}
+
+.ct-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .create-trip-row {
+    grid-template-columns: 1fr;
+  }
+
+  .create-trip-card {
+    padding: 24px 20px;
+  }
+}

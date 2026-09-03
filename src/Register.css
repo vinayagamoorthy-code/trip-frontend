@@ -1,0 +1,227 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+     /* min-height: 100vh;  */
+     
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+ 
+
+  animation: bgZoom 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgZoom {
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 110%;
+  }
+}
+
+.register {
+
+ 
+  width: min(400px, 90%);
+  margin: 40px auto;  
+  padding: 35px; 
+  box-sizing: border-box;
+  margin-top: 100px;
+ 
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity:0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register label {
+  display: flex;
+  flex-direction: column;
+}
+
+.register input[type="text"],
+.register input[type="password"] 
+ {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dbeafe;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.register input[type="email"]{
+   width: 100%;
+  padding: 12px;
+  border: 2px solid #dbeafe;
+  border-radius: 10px;
+  box-sizing: border-box;
+} 
+
+.btn {
+  width: 100%;
+  padding: 14px;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.register h1{
+   text-align: center;
+  color: #0088cc;
+  margin-bottom: 25px;
+  font-size: 2rem;
+    animation: fadeDown 1s ease;
+
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.register input{
+    transition: .3s;
+}
+
+.register input:focus{
+    transform: scale(1.03);
+}
+
+
+
+
+
+.register label{
+    opacity:0;
+    animation: fadeUp .7s forwards;
+}
+
+.register label{
+    opacity:0;
+    animation: fadeUp .7s forwards;
+}
+
+.register label:nth-child(1){
+    animation-delay:.3s;
+}
+
+.register label:nth-child(2){
+    animation-delay:.5s;
+}
+
+.register label:nth-child(3){
+    animation-delay:.7s;
+}
+
+.btn{
+    opacity:0;
+    animation: fadeUp .7s forwards;
+    animation-delay:.9s;
+    box-shadow: #0088cc 0px 5px 15px;
+}
+
+
+
+
+.register p{
+    text-align: center;
+  margin-top: 20px;
+  color: #555;
+    opacity:0;
+    animation: fadeUp .7s forwards;
+    animation-delay:1.1s;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    body {
+    animation: none;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #root {
+  min-height: 100vh;
+}
+
+  .register {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .register h1 {
+    font-size: 1.5rem;
+  }
+
+  .register input,
+  .btn {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  text-align: center;
+  /* margin-top: 150px; */
+  color: #140f0f;
+  font-size: 15px;
+}

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f1e8d8;
+}
+
+
+.mytrips-page {
+  /* min-height: 100vh;
+  background: #f1e8d8;
+  padding: 50px 20px; */
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+.back{
+  background: #0f4c43;
+  color: white;
+  margin-left: 800px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+
+.back:hover{
+   background: #0c3c36;
+}
+
+.mytrips-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+
+.mytrips-title {
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  color: #211c17;
+  margin-bottom: 30px;
+}
+
+/* Edit Card */
+
+.edit-card {
+  background: #fffdf8;
+  border: 1px solid #e4d9c3;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 35px;
+   /* box-shadow: 0 15px 35px rgba(33, 28, 23, 0.06);  */
+}
+
+.edit-card h3 {
+  margin-top: 0;
+  color: #211c17;
+  font-family: "Fraunces", serif;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #5b5347;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #e4d9c3;
+  background: #fbf6ec;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  /* transition: 0.2s; */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0f4c43;
+  /* box-shadow: 0 0 0 3px rgba(15, 76, 67, 0.12); */
+}
+
+/* Buttons */
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.btn-save {
+  background: #0f4c43;
+  color: #f1e8d8;
+}
+
+.btn-save:hover {
+  background: #0c3c36;
+}
+
+.btn-cancel {
+  background: #d6d0c5;
+  color: #211c17;
+  margin-left: 10px;
+}
+
+.btn-cancel:hover {
+  background: #c6bfb4;
+}
+
+.btn-edit {
+  background: #0f4c43;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #0c3c36;
+}
+
+.btn-delete {
+  background: #b0431b;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  background: #913518;
+}
+
+
+
+.trip-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.trip-card {
+  background: #fffdf8;
+  border: 1px solid #e4d9c3;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 15px 30px rgba(33, 28, 23, 0.05);
+}
+
+.trip-card h3 {
+  margin: 0 0 12px;
+  color: #211c17;
+  font-family: "Fraunces", serif;
+}
+
+.trip-card p {
+  margin: 8px 0;
+  color: #5b5347;
+}
+
+.trip-actions {
+  margin-top: 18px;
+}
+
+/* Empty */
+
+.empty-state {
+  text-align: center;
+  color: #8a7f6b;
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .mytrips-title {
+    font-size: 28px;
+  }
+
+  .trip-card {
+    padding: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .btn-delete,
+  .btn-cancel {
+    margin-left: 0;
+  }
+}
