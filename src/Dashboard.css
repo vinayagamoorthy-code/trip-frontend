@@ -181,11 +181,31 @@
   box-shadow: 0 12px 24px -12px rgba(232, 98, 61, 0.4);
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 32px 24px 28px;
+  }
+
+  .action-card {
+    width: calc(50% - 12px);
+  }
+}
+
+/* Mobile */
 @media (max-width: 480px) {
   .dashboard-content {
-    padding: 40px 20px 32px;
+    padding: 24px 16px 24px;
   }
+
   .action-card {
     width: 100%;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .dashboard-content {
+    padding: 16px 12px 20px;
   }
 }

@@ -138,6 +138,14 @@ textarea.ct-input {
   cursor: not-allowed;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+  .create-trip-card {
+    padding: 28px 24px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 640px) {
   .create-trip-row {
     grid-template-columns: 1fr;
@@ -145,5 +153,12 @@ textarea.ct-input {
 
   .create-trip-card {
     padding: 24px 20px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .create-trip-card {
+    padding: 20px 16px;
   }
 }

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import Swal from "sweetalert2"
 import "./Register.css"
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -13,7 +14,7 @@ const Login = () => {
   const handleSubmit = async(e) =>{
     e.preventDefault();
     if (!username || !password ) {
-      alert("Please fill all details.");
+      toast.warning("Please fill all details.");
       return;
     };
     try{

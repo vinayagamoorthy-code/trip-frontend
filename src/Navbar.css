@@ -93,7 +93,7 @@ nav .nav-links li:last-child:hover {
 }
   */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   nav {
     flex-direction: column;
     gap: 16px;
@@ -103,5 +103,29 @@ nav .nav-links li:last-child:hover {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+} */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+  }
+
+  .navbar-links.active {
+    display: flex; /* shown when toggled open */
+  }
+
+  .navbar-toggle {
+    display: block; /* show hamburger icon */
   }
 }

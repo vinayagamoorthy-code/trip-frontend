@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import "./Register.css"
+import { toast } from "react-toastify";
 const Register = () => {
   const[username , setUsername] = useState("");
   const[password , setPassword] = useState("");
@@ -12,7 +13,7 @@ const Register = () => {
   const handleSubmit = async(e) =>{
       e.preventDefault();
       if (!username || !password || !email) {
-        alert("Please fill all details.");
+        toast.warning("Please fill all details.");
         return;
       }
      try{
@@ -21,6 +22,7 @@ const Register = () => {
       );
       console.log(res.status);
        if (res.status === 200 || res.status === 201) {
+        toast.success("Registration successful! Please log in.");
          navigate("/");
        }
      } 
@@ -28,7 +30,12 @@ const Register = () => {
   console.log("Status:", err.response?.status);
   console.log("Data:", err.response?.data);
   console.log(err);
-  alert("Registration failed. Please try again.");
+  if(err.response?.status === 409) {
+    toast.error("Username already exists. Please choose a different username.");
+  } else if(err.response?.status === 400) {
+    toast.error("Invalid input. Please check your details and try again.");
+  }
+ 
 }
   }
   return (

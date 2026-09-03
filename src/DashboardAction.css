@@ -294,14 +294,30 @@
   margin: 45px 0;
 }
 
-@media (max-width:640px) {
+/* Tablet */
+@media (max-width: 768px) {
+  .idea-grid,
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
   .stamp-row {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .idea-grid,
   .trip-list,
   .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .stamp-row {
     grid-template-columns: 1fr;
   }
 }

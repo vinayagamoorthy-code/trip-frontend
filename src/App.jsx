@@ -1,4 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Login from './Login'
 import CreateTrip from './Createtrip.jsx'
 import Mytrips from './Mytrips.jsx'
@@ -16,7 +18,12 @@ const App = () => {
         <Route path="/mytrips" element={<Mytrips />} />
         <Route path="/Register" element={<Register />} />
       </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+      />
     </BrowserRouter>
+    
   )
 }
 

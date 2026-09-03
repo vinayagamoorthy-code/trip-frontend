@@ -186,7 +186,7 @@ body {
 }
 
 /* Responsive */
-
+/* Tablet */
 @media (max-width: 768px) {
   .mytrips-title {
     font-size: 28px;
@@ -204,5 +204,27 @@ body {
   .btn-delete,
   .btn-cancel {
     margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .mytrips-title {
+    font-size: 22px;
+  }
+
+  .trip-card {
+    padding: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .mytrips-title {
+    font-size: 20px;
+  }
+
+  .trip-card {
+    padding: 12px;
   }
 }
