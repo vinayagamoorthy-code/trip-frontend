@@ -33,9 +33,7 @@ const Dashboard = () => {
       <DashboardActions username={username} />
 
       <div className="dashboard-actions">
-       {/*  <Link to="/MyTrips">
-          <button className="action-card">My Trips</button>
-        </Link> */}
+     
       <div className="action-card1">
         <Link to="/createtrip">
           <span className="icon">

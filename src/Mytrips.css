@@ -185,46 +185,144 @@ body {
   margin-top: 80px;
 }
 
-/* Responsive */
-/* Tablet */
-@media (max-width: 768px) {
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 680px) {
+
+  .mytrips-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .mytrips-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 16px;
+    box-sizing: border-box;
+  }
+
+  /* Back button */
+
+
+  /* Page title */
   .mytrips-title {
     font-size: 28px;
+    text-align: center;
+    margin: 10px 0 25px;
   }
 
-  .trip-card {
-    padding: 18px;
-  }
-
-  .btn {
+  /* Trip cards become one column */
+  .trip-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
     width: 100%;
-    margin-top: 10px;
-  }
-
-  .btn-delete,
-  .btn-cancel {
-    margin-left: 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .mytrips-title {
-    font-size: 22px;
   }
 
   .trip-card {
-    padding: 14px;
-  }
-}
-
-/* Small mobile */
-@media (max-width: 360px) {
-  .mytrips-title {
-    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 16px;
+    border-radius: 14px;
   }
 
-  .trip-card {
+  .trip-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    word-break: break-word;
+  }
+
+
+  .trip-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 7px 0;
+    word-break: break-word;
+  }
+
+  .trip-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .trip-actions .btn {
+    width: 100%;
     padding: 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+ 
+  .edit-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .edit-card h3 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  
+  .edit-card .btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  
+  .trip-expired-msg {
+    font-size: 13px !important;
+    line-height: 1.4;
+    margin: 12px 0;
+  }
+
+  
+  .empty-state {
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 10px;
+  }
+ 
+    .back {
+    width: 100%;
+    max-width: auto;
+    padding: 11px 16px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
   }
 }

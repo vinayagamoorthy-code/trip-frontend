@@ -47,6 +47,7 @@ const Login = () => {
   }
   return (
     <div>
+      <h1 className="maintext">✈️Travel Planner</h1>
     <div className="register">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>

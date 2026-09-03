@@ -1,4 +1,4 @@
-/* DashboardActions.css */
+
 
 .page {
   max-width: 760px;
@@ -294,30 +294,61 @@
   margin: 45px 0;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  .idea-grid,
-  .form-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+@media (max-width: 480px) {
 
-/* Mobile */
-@media (max-width: 640px) {
-  .stamp-row {
-    grid-template-columns: repeat(2, 1fr);
+  .page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
   }
 
-  .idea-grid,
-  .trip-list,
-  .form-grid {
-    grid-template-columns: 1fr;
+  .header {
+    padding: 30px 0 20px;
   }
+
+  .eye-user {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+.stamp-row,
+.dpa-stamps {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 8px;
+  box-sizing: border-box;
 }
 
-/* Small mobile */
-@media (max-width: 360px) {
-  .stamp-row {
-    grid-template-columns: 1fr;
-  }
+.dpa-stamp,
+.stamp {
+  width: 100%;
+  min-height: 75px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 4px;
 }
+
+.stamp-label {
+  margin-top: 5px;
+  font-size: 9px;
+}
+
+ }

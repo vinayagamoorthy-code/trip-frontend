@@ -57,13 +57,12 @@ const Mytrips = () => {
     }
   };
 
-  // Helper: safely check if a trip's date range has passed
   const checkExpired = (startDate, endDate) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     const end = new Date(endDate || startDate);
-    if (isNaN(end.getTime())) return false; // guard against bad/missing dates
+    if (isNaN(end.getTime())) return false;
     end.setHours(0, 0, 0, 0);
 
     return end < today;
@@ -167,7 +166,7 @@ const Mytrips = () => {
                         </button>
                       </div>
                     ) : (
-                      // ---- NORMAL VIEW CARD ----
+                     
                       <>
                         <h3>{trip.tripName}</h3>
                         <p><strong>Destination:</strong> {trip.destination}</p>
