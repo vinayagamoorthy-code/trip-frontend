@@ -2,6 +2,7 @@ import "./Navbar.css";
 import Swal from "sweetalert2";
 import { useState } from "react";
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleLogout = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
          <li>
-          <a href="/dashboard">🏠 Dashboard</a>
+          <a href="/Dashboard">🏠 Dashboard</a>
         </li>
         <li>
           <a href="/Mytrips">🧳 My Trips</a>
