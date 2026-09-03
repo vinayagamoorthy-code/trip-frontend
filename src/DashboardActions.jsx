@@ -406,16 +406,16 @@ export default function DashboardActions({ username }) {
           </div>
         ) : (
           <>
-            <div className="dpa-stamps" className="stamp-row">
+            <div className="dpa-stamps stamp-row">
               {TRIP_TYPES.map((type, i) => {
                 const Icon = type.icon;
                 const isActive = activeType === type.id;
                 return (
                   <button
                     key={type.id}
-                    className="dpa-stamp"
+                    className="dpa-stamp stamp"
                     onClick={() => setActiveType(isActive ? null : type.id)}
-                    className="stamp"
+                   
                     style={{
                       
                       transform: `rotate(${i % 2 === 0 ? "-3deg" : "3deg"})`,
@@ -438,14 +438,14 @@ export default function DashboardActions({ username }) {
                   <p className="panel-tagline">{activeTrip.tagline}</p>
                 </div>
 
-                <div className="dpa-ideas" className="idea-grid">
+                <div className="dpa-ideas idea-grid">
                   {activeTrip.ideas.map((idea) => {
                     const budgetStyle = BUDGET_STYLES[idea.budget];
                     return (
                       <button
                         key={idea.title}
-                        className="dpa-idea"
-                        className="idea-card"
+                        className="dpa-idea idea-card"
+                       
                         
                         onClick={() => handleSelectIdea(idea)}
                       >
@@ -558,7 +558,7 @@ export default function DashboardActions({ username }) {
         </p>
       </div>
     </div>
-  ))};
+  ))}
             </div>
           )}
         </div>
