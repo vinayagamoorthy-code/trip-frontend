@@ -26,8 +26,8 @@ const Navbar = () => {
         <div className="logo">Travel Planner</div>
         <ul className="nav-links">
             <li><a href="/dashboard">🏠 Dashboard</a></li>
-            <li><a href="/mytrips">🧳 My Trips</a></li>
-            <li><a href="/createtrip">➕ Create Trip</a></li>
+            <li><a href="/Mytrips">🧳 My Trips</a></li>
+            <li><a href="/CreateTrip">➕ Create Trip</a></li>
             <li><a  onClick={handleLogout}>
                 🚪 Logout
             </a></li>
