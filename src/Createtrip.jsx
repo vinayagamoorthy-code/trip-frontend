@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Plane, MapPin, Calendar, Wallet, FileText, ArrowRight } from "lucide-react";
-import "./createTrip.css";
+import "./createtrip.css";
 import Navbar from "./Navbar";
 
 
