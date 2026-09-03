@@ -9,7 +9,7 @@ body {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("C:\\Users\\acer\\Desktop\\Main project\\Frontend\\images\\projimg1.jpg")
+    url("../images/projimg1.jpg")
       center/cover no-repeat;
   height: 100vh;
  

@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Login from './Login'
 import CreateTrip from './Createtrip'
-import Mytrips from './Mytrips'
+import Mytrips from './Mytrips.jsx'
 import Dashboard from './Dashboard'
 
 import Register from './Register'
